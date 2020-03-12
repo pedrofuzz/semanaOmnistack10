@@ -18,5 +18,8 @@ app.use(express.json())
 
 app.use(routes)
 
+// Variável ambiente que armazena a porta
+var porta = process.env.PORT || 8080
+
 // Define a porta do servidor
-app.listen(3333)
+app.listen(porta)
