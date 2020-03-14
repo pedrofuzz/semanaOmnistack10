@@ -11,7 +11,7 @@ mongoose.connect('mongodb+srv://omnistack:1234@cluster0-bu5ak.mongodb.net/week10
     useUnifiedTopology: true
 })
 
-app.use(cors({ origin: 'http://localhost:3000' }))
+app.use(cors())
 
 // Configura o express para "entender" requisições no formato JSON
 app.use(express.json())
